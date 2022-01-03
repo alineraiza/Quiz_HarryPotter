@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz/pages/quiz/components/body.dart';
+import 'package:quiz/pages/welcome/welcome_page.dart';
 
 class QuizPage extends StatelessWidget {
   const QuizPage({ Key? key }) : super(key: key);
@@ -8,12 +9,12 @@ class QuizPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        actions: [
-        TextButton(onPressed: (){}, child: Text('Skip', style: TextStyle(color: Colors.white),))
-      ]),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.transparent,
+      //   elevation: 0,
+      //   actions: [
+      //   TextButton(onPressed: (){}, child: Text('Skip', style: TextStyle(color: Colors.white),))
+      // ]),
       body: Body(),
     );
   }
